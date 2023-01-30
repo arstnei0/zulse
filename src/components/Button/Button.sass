@@ -1,0 +1,27 @@
+@import "style"
+
+.z-button
+    outline: 0
+    padding: $padding-ver $padding-hor
+    border: none
+    border-radius: $border-radius
+    background-color: $color-bg-light
+    color: $color-font-clear
+    box-shadow: 0px 0px 3px 1px $color-shadow-darker
+    font-size: $font-size-primary
+    transition: all .3s ease-out
+
+    &:hover
+        background-color: $color-bg-lighter
+        box-shadow: 0px 0px 7px 3px $color-shadow
+
+    &.primary
+        background-color: $color-primary
+
+        &:hover
+            filter: brightness(120%)
+
+    &.text
+        background-color: inherit
+        box-shadow: none
+        color: $color-font-accent
