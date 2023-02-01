@@ -4,7 +4,7 @@ import { Button } from "../Button"
 import { Dialog } from "../Dialog"
 
 export const DialogShowcase: Component = () => {
-	const [open, setOpen] = createSignal(true)
+	const [open, setOpen] = createSignal(false)
 	return (
 		<ShowcaseBox>
 			<Showcase>

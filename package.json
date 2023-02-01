@@ -1,18 +1,22 @@
 {
-  "name": "zulse",
-  "type": "module",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "@astrojs/solid-js": "^2.0.0",
-    "astro": "^2.0.2",
-    "sass": "^1.57.1",
-    "solid-js": "^1.4.3"
-  }
+	"name": "zulse",
+	"type": "module",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"format": "prettier -w . --plugin-search-dir ."
+	},
+	"dependencies": {
+		"@astrojs/solid-js": "^2.0.0",
+		"astro": "^2.0.2",
+		"sass": "^1.57.1",
+		"solid-js": "^1.4.3"
+	},
+	"devDependencies": {
+		"prettier": "^2.8.3"
+	}
 }

@@ -7,6 +7,7 @@ import { DropdownShowcase } from "~/components/showcases/Dropdown"
 import { Checkbox } from "~/components/Checkbox"
 import { Switch } from "~/components/Switch"
 import { DialogShowcase } from "~/components/showcases/Dialog"
+import { ButtonGroupShowcase } from "~/components/showcases/ButtonGroup"
 ---
 
 <Layout title="Zulse: Zihan's design">
@@ -19,6 +20,8 @@ import { DialogShowcase } from "~/components/showcases/Dialog"
 		</Showcase>
 		<Showcase><Button variant="text" client:idle>Follow</Button></Showcase>
 	</ShowcaseBox>
+	<h2>Button Group</h2>
+	<ButtonGroupShowcase client:idle />
 	<h2>Input</h2>
 	<ShowcaseBox>
 		<Showcase><Input client:idle /></Showcase>

@@ -6,22 +6,22 @@
 	box-sizing: border-box;
 	font-size: 1.1rem;
 	border-radius: $border-radius;
-	transition: all .3s ease;
+	transition: all 0.3s ease;
 }
 
 .z-input input {
 	font-size: $font-size-prior;
-	padding: .9rem;
+	padding: 0.9rem;
 	outline: none;
 	border: 2px solid $color-primary;
 	background-color: transparent;
 	border-radius: $border-radius;
 	width: 100%;
-	transition: all .25s ease;
+	transition: all 0.25s ease;
 	color: $color-font-primary;
 }
 
-.z-input:has(input:hover) {
+.z-input:hover {
 	background-color: $color-bg-lighter;
 	box-shadow: $box-shadow-medium;
 }
@@ -34,11 +34,11 @@
 	margin: 0.8em;
 	margin-left: 1.3em;
 	pointer-events: none;
-	transition: all .3s ease;
+	transition: all 0.3s ease;
 	border-radius: $border-radius;
 }
 
-.z-input :is(input:focus, input:not(:placeholder-shown))~label {
+.z-input :is(input:focus, input:not(:placeholder-shown)) ~ label {
 	transform: translateY(-50%) scale(1);
 	margin: 0em;
 	margin-left: 1.3em;
@@ -47,4 +47,5 @@
 	background-color: $color-bg;
 }
 
-.z-input :is(input:focus, input:not(:placeholder-shown)) {}
+.z-input :is(input:focus, input:not(:placeholder-shown)) {
+}

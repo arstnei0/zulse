@@ -1,0 +1,11 @@
+@import "style"
+
+.z-button-group
+    & > * > .z-button
+        border-radius: 0 0 0 0
+
+    & .hoverable:first-of-type .z-button
+        border-radius: $border-radius 0 0 $border-radius
+
+    & .hoverable:last-of-type .z-button
+        border-radius: 0 $border-radius $border-radius 0
