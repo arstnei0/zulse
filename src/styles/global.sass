@@ -10,6 +10,8 @@ body
     overflow-x: hidden
     overflow-y: scroll
     transition: all .5s ease
+    margin-left: 10%
+    margin-right: 10%
 
 a
     text-decoration: none
@@ -20,17 +22,14 @@ main
         margin: 3em
         margin-top: 1em
 
-*
-    animation: dropin .6s ease
+// @keyframes dropin
+//     from
+//         transform: translateY(-70px)
+//         opacity: 0
 
-@keyframes dropin
-    from
-        transform: translateY(-70px)
-        opacity: 0
-
-    to
-        transform: translateY(0px)
-        opacity: 1
+//     to
+//         transform: translateY(0px)
+//         opacity: 1
 
 *
     box-sizing: border-box
@@ -47,3 +46,9 @@ main
 
 .nd
     display: none
+
+@keyframes fadein
+    0%
+        opacity: 0
+    100%
+        opacity: 1

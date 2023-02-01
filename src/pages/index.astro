@@ -1,12 +1,39 @@
 ---
 import { Button } from "~/components/Button"
 import Layout from "../layouts/Layout.astro"
+import { Showcase, ShowcaseBox } from "~/components/Showcase"
+import { Input } from "~/components/Input"
+import { DropdownShowcase } from "~/components/showcases/Dropdown"
+import { Checkbox } from "~/components/Checkbox"
+import { Switch } from "~/components/Switch"
+import { DialogShowcase } from "~/components/showcases/Dialog"
 ---
 
 <Layout title="Zulse: Zihan's design">
 	<h1>Zulse is Zihan's design</h1>
 	<h2>Button</h2>
-	<Button client:idle>Follow</Button>
-	<Button variant="primary" client:idle>Follow</Button>
-	<Button variant="text" client:idle>Follow</Button>
+	<ShowcaseBox>
+		<Showcase><Button client:idle>Follow</Button></Showcase>
+		<Showcase>
+			<Button variant="primary" client:idle>Follow</Button>
+		</Showcase>
+		<Showcase><Button variant="text" client:idle>Follow</Button></Showcase>
+	</ShowcaseBox>
+	<h2>Input</h2>
+	<ShowcaseBox>
+		<Showcase><Input client:idle /></Showcase>
+	</ShowcaseBox>
+	<h2>Dropdown</h2>
+	<DropdownShowcase client:idle />
+	<h2>Checkbox</h2>
+	<ShowcaseBox>
+		<Showcase><Checkbox client:idle /></Showcase>
+	</ShowcaseBox>
+	<h2>Switch</h2>
+	<ShowcaseBox>
+		<Showcase><Switch client:idle /></Showcase>
+	</ShowcaseBox>
+	<h2>Dialog</h2>
+	<DialogShowcase client:idle />
+	<p>All the components are open source.</p>
 </Layout>

@@ -1,5 +1,6 @@
 import { Component, Show, createSignal } from "solid-js"
-import { Hoverable } from "./Cursor"
+import "./ThemeToggleButton.sass"
+import { Hoverable } from "../Cursor"
 
 export type Mode = "d" | "l" | "s"
 export const [mode, setMode] = createSignal((globalThis as any).m as Mode)
@@ -36,7 +37,7 @@ export const toggleTheme = () => {
 export const ThemeToggleButton: Component = () => {
 	return (
 		<>
-			<Hoverable round>
+			<Hoverable round shadow={true}>
 				<div id="theme-toggle-button" onClick={toggleTheme}>
 					<Show
 						when={mode() === "l"}

@@ -1,0 +1,30 @@
+@import "style"
+
+.z-checkbox
+    outline: 0
+    background-color: $color-bg
+    border: solid 3px $color-bg-lighter
+    border-radius: $border-radius
+    width: 30px
+    height: 30px
+    padding: 0
+    align-items: center
+    display: flex
+    justify-content: center
+    transition: all .3s ease
+
+    &:hover
+        border: solid 4px $color-bg-lightest
+
+    &:active
+        filter: brightness(85%)
+
+    &.checked
+        background-color: $color-primary
+        border: none
+
+    & *
+        display: inline-block
+        width: 23px
+        height: 23px
+        color: $color-font-primary

@@ -1,0 +1,28 @@
+@import "style"
+
+.z-switch
+    width: 60px
+    height: 30px
+    border-radius: 15px
+    background-color: $color-bg-light
+    position: relative
+    transition: all .3s ease
+
+    &:hover
+        background-color: $color-bg-lighter
+
+    &.checked
+        background-color: $color-primary
+
+    & .inner
+        position: absolute
+        width: 20px
+        height: 20px
+        border-radius: 15px
+        top: 5px
+        left: 5px
+        background-color: $color-font-primary
+        transition: all .3s ease
+
+    &.checked .inner
+        left: 35px

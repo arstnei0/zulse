@@ -1,0 +1,29 @@
+@import "style"
+
+.z-dropdown-items
+    transition: all .3s ease
+    position: absolute
+    margin: .5em
+    padding: .3em
+    width: 300px
+    border-radius: $border-radius
+    background-color: $color-bg-light
+    display: flex
+    flex-direction: column
+    animation: fadein .4s ease
+
+.z-dropdown-item
+    margin: .1em
+    padding: .4em .8em
+    border-radius: $border-radius
+    transition: all .3s ease
+
+    &:hover
+        background-color: $color-bg-lighter
+    &:active
+        filter: brightness(80%)
+
+.z-dropdown-divider
+    margin: .4em .8em
+    border: solid 1px $color-font-primary
+    opacity: .5
