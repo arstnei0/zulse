@@ -1,7 +1,7 @@
 import { Component, createSignal } from "solid-js"
-import { Showcase, ShowcaseBox } from "../Showcase"
-import { Dropdown, DropdownDivider, DropdownItem } from "../Dropdown"
-import { Button, ButtonBare } from "../Button"
+import { Showcase, ShowcaseBox } from "zulse/Showcase"
+import { Dropdown, DropdownDivider, DropdownItem } from "zulse/Dropdown"
+import { Button, ButtonBare } from "zulse/Button"
 
 export const DropdownShowcase: Component = () => {
 	const [open, setOpen] = createSignal(false)

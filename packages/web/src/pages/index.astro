@@ -1,11 +1,12 @@
 ---
-import { Button } from "~/components/Button"
+import { Button } from "zulse/Button"
+import { Textarea } from "zulse/Textarea"
 import Layout from "../layouts/Layout.astro"
-import { Showcase, ShowcaseBox } from "~/components/Showcase"
-import { Input } from "~/components/Input"
+import { Showcase, ShowcaseBox } from "zulse/Showcase"
+import { Input } from "zulse/Input"
 import { DropdownShowcase } from "~/components/showcases/Dropdown"
-import { Checkbox } from "~/components/Checkbox"
-import { Switch } from "~/components/Switch"
+import { Checkbox } from "zulse/Checkbox"
+import { Switch } from "zulse/Switch"
 import { DialogShowcase } from "~/components/showcases/Dialog"
 import { ButtonGroupShowcase } from "~/components/showcases/ButtonGroup"
 ---
@@ -38,5 +39,9 @@ import { ButtonGroupShowcase } from "~/components/showcases/ButtonGroup"
 	</ShowcaseBox>
 	<h2>Dialog</h2>
 	<DialogShowcase client:idle />
+	<h2>Textarea</h2>
+	<ShowcaseBox>
+		<Showcase><Textarea placeholder="Hello zulse" client:idle /></Showcase>
+	</ShowcaseBox>
 	<p>All the components are open source.</p>
 </Layout>

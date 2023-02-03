@@ -1,0 +1,23 @@
+@import "style"
+
+.z-textarea
+    border: solid 2px $color-primary
+    outline: none
+    background-color: $color-bg
+    color: $color-font-primary
+    padding: .7em
+    font-family: $sans
+    font-size: $font-size-primary
+    border-radius: $border-radius
+    width: 35em
+    height: auto
+    overflow-y: hidden
+    transition: all .3s ease
+    resize: none
+    display: block
+
+    &:hover
+        background-color: $color-bg-light
+
+    &:focus
+        box-shadow: $box-shadow-medium

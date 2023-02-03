@@ -1,0 +1,53 @@
+@import "style";
+
+.z-input {
+	margin: 1rem 0 1rem 0;
+	position: relative;
+	box-sizing: border-box;
+	font-size: 1.1rem;
+	border-radius: $border-radius;
+	transition: all 0.3s ease;
+
+	&:focus,
+	&:active {
+		box-shadow: $box-shadow-medium;
+	}
+
+	&:hover {
+		background-color: $color-bg-light;
+	}
+
+	& label {
+		font-size: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		margin: 0.8em;
+		margin-left: 1.3em;
+		pointer-events: none;
+		transition: all 0.3s ease;
+		border-radius: $border-radius;
+	}
+
+	& input {
+		font-size: $font-size-prior;
+		padding: 0.9rem;
+		outline: none;
+		border: 2px solid $color-primary;
+		background-color: transparent;
+		border-radius: $border-radius;
+		width: 100%;
+		transition: all 0.25s ease;
+		color: $color-font-primary;
+	}
+
+
+	& :is(input:focus, input:not(:placeholder-shown))~label {
+		transform: translateY(-50%) scale(1);
+		margin: 0em;
+		margin-left: 1.3em;
+		padding-left: 0.4em;
+		padding-right: 0.4em;
+		background-color: $color-bg;
+	}
+}

@@ -1,6 +1,6 @@
-import { Button } from "../Button"
-import { ButtonGroup } from "../ButtonGroup"
-import { Showcase, ShowcaseBox } from "../Showcase"
+import { Button } from "zulse/Button"
+import { ButtonGroup } from "zulse/ButtonGroup"
+import { Showcase, ShowcaseBox } from "zulse/Showcase"
 
 export const ButtonGroupShowcase = () => {
 	return (

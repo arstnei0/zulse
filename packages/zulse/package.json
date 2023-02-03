@@ -1,0 +1,23 @@
+{
+	"name": "zulse",
+	"version": "0.0.1",
+	"scripts": {},
+	"dependencies": {
+		"solid-js": "^1.4.3"
+	},
+	"exports": {
+		"./Button": "./Button/index.tsx",
+		"./ButtonGroup": "./ButtonGroup/index.tsx",
+		"./Cursor": "./Cursor/index.tsx",
+		"./ThemeToggleButton": "./ThemeToggleButton/index.tsx",
+		"./Dialog": "./Dialog/index.tsx",
+		"./Checkbox": "./Checkbox/index.tsx",
+		"./Dropdown": "./Dropdown/index.tsx",
+		"./Switch": "./Switch/index.tsx",
+		"./Backdrop": "./Backdrop/index.tsx",
+		"./Input": "./Input/index.tsx",
+		"./Textarea": "./Textarea/index.tsx",
+		"./Showcase": "./Showcase/index.tsx"
+	},
+	"type": "module"
+}

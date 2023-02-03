@@ -1,7 +1,7 @@
 import { Component, createSignal } from "solid-js"
-import { Showcase, ShowcaseBox } from "../Showcase"
-import { Button } from "../Button"
-import { Dialog } from "../Dialog"
+import { Showcase, ShowcaseBox } from "zulse/Showcase"
+import { Button } from "zulse/Button"
+import { Dialog } from "zulse/Dialog"
 
 export const DialogShowcase: Component = () => {
 	const [open, setOpen] = createSignal(false)
