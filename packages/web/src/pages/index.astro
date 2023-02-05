@@ -1,5 +1,6 @@
 ---
 import { Button } from "zulse/Button"
+import { Card } from "zulse/Card"
 import { Textarea } from "zulse/Textarea"
 import Layout from "../layouts/Layout.astro"
 import { Showcase, ShowcaseBox } from "zulse/Showcase"
@@ -42,6 +43,10 @@ import { ButtonGroupShowcase } from "~/components/showcases/ButtonGroup"
 	<h2>Textarea</h2>
 	<ShowcaseBox>
 		<Showcase><Textarea placeholder="Hello zulse" client:idle /></Showcase>
+	</ShowcaseBox>
+	<h2>Card</h2>
+	<ShowcaseBox>
+		<Showcase><Card client:idle><h1>Card title</h1></Card></Showcase>
 	</ShowcaseBox>
 	<p>All the components are open source.</p>
 </Layout>

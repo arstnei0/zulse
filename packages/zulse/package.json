@@ -17,6 +17,7 @@
 		"./Backdrop": "./Backdrop/index.tsx",
 		"./Input": "./Input/index.tsx",
 		"./Textarea": "./Textarea/index.tsx",
+		"./Card": "./Card/index.tsx",
 		"./Showcase": "./Showcase/index.tsx"
 	},
 	"type": "module"
